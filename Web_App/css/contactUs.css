@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+  }
+  
+  /*--- navigation bar ---*/
+  
+  .navbar {
+    background:#25335d;
+  }
+  
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .nav-link {
+    margin-right: 2em !important;
+  }
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+ 
+/** image div **/
+#imageDiv{
+    background-image: url('../pics/contactus_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20em;
+}
+
+/** footer **/
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.video{
+  margin-bottom: 4%;
+}
+
+#flip {
+  cursor: pointer;
+}
+
+#flip:hover {
+  background-color: red;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+
+  #forPhone {
+    font-size: medium;
+  }
+
+  #ytVideo{
+    width: 100;
+    height: 100;
+  }
+
+  #imageDiv{
+    background-image: url('../pics/contact.jpg');
+    
+    background-repeat: no-repeat;
+    height: 20em;
+}
+
+}

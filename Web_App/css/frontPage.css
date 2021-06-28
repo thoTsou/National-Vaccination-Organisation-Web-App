@@ -1,0 +1,168 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+  }
+  
+  /*--- navigation bar ---*/
+  
+  .navbar {
+    background:#25335d;
+  }
+  
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .nav-link {
+    margin-right: 2em !important;
+  }
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+ 
+/*--- welcome div - description ---*/
+
+.header {
+  background-image: url('../pics/frontPageWelcome.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20em;
+}
+
+ 
+.description h1 {
+  color: blue;
+}
+
+.description p {
+  color: blue;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description a {
+  border:1px solid #04B49D;
+  background: #04B49D;
+  border-radius: 0;
+  color:#fff;
+}
+
+.description a:hover {
+  border:1px solid blue;
+  background:blue;
+  color:white;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  height: 50%;
+  width: 50%;
+}
+
+
+.features .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.features .btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+/** footer **/
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.video{
+  margin-bottom: 4%;
+}
+
+#flip {
+  cursor: pointer;
+}
+
+#flip:hover {
+  background-color: red;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 415px) {
+
+  #forPhone {
+    font-size: medium;
+  }
+
+  #forPhone2 {
+    margin-top: 5%;
+  }
+
+  #ytVideo{
+    width: 100;
+    height: 100;
+  }
+
+
+
+}

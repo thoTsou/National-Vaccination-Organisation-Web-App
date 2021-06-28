@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Covid-19 Vaccination-Appointment</title>
+    <meta charset="utf-8">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--My external css -->
+    <link rel="stylesheet" type="text/css" href="../css/appointmentArr.css">
+    <!-- My external Js -->
+    <script src="../js/appointment.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <!--   NavBar -->
+
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><span id="forPhone">Εθνικός Οργανισμός Εμβολιασμού</span></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">Νέα</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="questions.html">Συχνές ερωτήσεις</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="appointmentArragement.html">Ραντεβού για εμβολιασμό</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="statistics.html">Στατιστικά εμβολιασμού</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Επικοινωνία</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br />
+    <div class="container" style="text-align: center;">
+        <h3><u>Νέο Ραντεβού</u></h3><br />
+        <h4 id="hideThisHeader">Παρακαλώ συμπλώστε τα παρακάτω πεδία</h4>
+    </div>
+    <br />
+
+    <!-- appointment arrengment form -->
+    <div id="form" style="display: block;">
+
+        <div class="container" id="formDiv">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+
+                    <div class="form-group">
+                        <label for="name"><u>Όνομα</u></label>
+                        <input type="text" class="form-control" placeholder="Eισάγετε Όνομα" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname"><u>Επώνυμο</u></label>
+                        <input type="text" class="form-control" placeholder="Eισάγετε Επώνυμο" id="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNum"><u>Τηλέφωνο</u></label>
+                        <input type="text" class="form-control" placeholder="Eισάγετε Τηλέφωνο" id="phoneNum" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><u>Email</u></label>
+                        <input type="email" class="form-control" placeholder="Eισάγετε έγκυρο Εmail" id="email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amka"><u>AMKA</u></label>
+                        <input type="text" class="form-control" placeholder="Eισάγετε ΑΜΚΑ" id="amka" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender"><u>Φύλο</u></label><br />
+                        <!-- select -->
+                        <select name="gender" id="gender" required>
+                            <option disabled selected value> -- Επιλέξτε Φύλο -- </option>
+                            <option value="male">Άντρας</option>
+                            <option value="female">Γυναίκα</option>
+                        </select>
+                        <br>
+
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button type="button" class="btn btn-success" id="hideFormDiv">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- random Date Time -->
+
+        <div class="container" id="arrangeDateTimeDiv">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h3><u>Ημέρα και Ώρα ραντεβού</u></h3><br />
+                    <div id="arragement"
+                        style="background-color: green;color: white;text-align: center;font-size: large; font-weight: bold;">
+
+                    </div><br />
+                    <div>
+                        <h5>Aν συμφωνήτε πατήστε <u>Οριστική Υποβολή</u> αλλιώς επιλέξτε εσείς μια διαθέσιμη ώρα και
+                            μέρα
+                            <a href="#arrangeDateTimeDiv" id="chooseDateTime">ΠΑΤΩΝΤΑΣ ΕΔΩ</a>
+                        </h5><br />
+                        <h5>Aν θέλετε να επιστρέψετε στην αρχική σελίδα <a href="index.html" id="chooseDateTime">ΠΑΤΗΣΤΕ
+                                ΕΔΩ</a></h5><br /><br />
+                        <div style="text-align: center;">
+                            <button type="button" class="btn btn-success" id="submitForm">Oριστική Υποβολή</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- manual Date Time -->
+
+        <div class="container" id="manualDateTimeDiv" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <label for="start">Επιλέξτε Μέρα:</label>
+
+                    <input type="date" id="start" name="trip-start" min="2021-05-24" max="2021-8-31">
+                    <br /><br />
+
+                    <label for="appt">Επιλέξτε ώρα (μεταξύ 9 το πρωί και 10 το βράδυ):</label>
+
+                    <input type="time" id="appt" name="appt" min="09:00" max="21:00">
+
+                    <small>** ΑΜ = προ μεσημβρίας , PM = μετά μεσημβρίαν </small><br /><br />
+                    <div>
+                        <h5>Aν θέλετε να οριστικοποιήσετε το ραντεβού σας , πατήστε <u>Οριστική Υποβολή</u><br />
+                            <h5>Aν θέλετε να επιστρέψετε στην αρχική
+                                σελίδα
+                                <a href="index.html">ΠΑΤΗΣΤΕ ΕΔΩ</a>
+                            </h5>
+                        </h5><br /><br/>
+                        <div style="text-align: center;">
+                            <button type="button" class="btn btn-success" id="button2">Oριστική Υποβολή</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- AJAX responce all ok -->
+    <div class="container" style="display: none;" id="ajaxSuccess">
+        <div class="alert alert-success" role="alert">
+            Κλείσατε <b>EΠΙΤΥΧΩΣ</b> το ραντεβού σας . Σας ευχαριστούμε πολύ. <a href="index.html"
+                class="alert-link">ΕΠΙΣΤΡΟΦΗ ΣΤΗΝ ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a>
+        </div>
+    </div>
+
+    <!-- AJAX responce error -->
+    <div class="container" style="display: none;" id="ajaxError">
+        <div class="alert alert-danger" role="alert">
+            Κάτι πήγε στραβά ... Παρακαλώ πατήστε στον ακόλουθο σύνδεσμο
+            και προσπαθήστε ξανά .
+            <a href="appointmentArragement.html" class="alert-link">NEA ΠΡΟΣΠΑΘΕΙΑ</a>
+        </div>
+    </div>
+
+    <!-- AJAX wait -->
+    <div class="container" style="display: none;" id="ajaxWait">
+        <div class="alert alert-info" role="alert">
+            Παρακαλώ Περιμένετε...
+        </div>
+    </div>
+
+    <br />
+
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Επιπλέον Πλροφορίες</h6>
+                    <p>Σκοπός της διαδικτυακής αυτής εφαρμογής είναι η διευκόλυνση των πολιτών ως
+                        προς το κλείσιμο ραντεβού για τον εμβολισμό τους κατά του ιιού COVID-19.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Επικοινωνία</h6>
+                    <p><i class="fa fa-compass" aria-hidden="true"></i> Μ. Καραολή & Α. Δημητρίου 80, 18534 Πειραιάς
+                        <br /><i class="fa fa-envelope-o" aria-hidden="true"></i> info@govWebsite.com
+                        <br /><i class="fa fa-phone" aria-hidden="true"></i> 2101234567
+                        <br /><i class="fa fa-phone" aria-hidden="true"></i> 2101234568
+                    </p>
+                </div>
+            </div>
+            <div class="footer-copyright text-center">© 2021 Copyright: MyWebsite.com</div>
+    </footer>
+
+    <!-- footer end -->
+
+
+</body>
+
+</html>
